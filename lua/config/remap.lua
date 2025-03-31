@@ -18,13 +18,15 @@ vim.keymap.set("n", "<Leader>h", "<C-w>s")
 vim.keymap.set("n", "<Leader>v", "<C-w>v")
 vim.keymap.set("n", "<Leader>t", ":Tex<CR>")
 
--- Move between neovim windows and buffers
+-- Move between neovim buffers, windows and tabs
+vim.keymap.set("n", "<A-l>", ":bnext<CR>")
+vim.keymap.set("n", "<A-h>", ":bprev<CR>")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
-vim.keymap.set("n", "<A-l>", ":bnext<CR>")
-vim.keymap.set("n", "<A-h>", ":bprev<CR>")
+vim.keymap.set("n", "tl", "gt")
+vim.keymap.set("n", "th", "gT")
 
 -- Remove windows or buffers
 vim.keymap.set("n", "<Leader>o", "<C-w>o")
